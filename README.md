@@ -13,12 +13,22 @@ This project was created during Data Analysis Competition by ITS. The project wa
 - Before merging the environmental conditions with train data, cheking and handling for un-matching Timestamp was conducted to ensure none duplicated data
 
 # Modeling
--<img width="1153" height="767" alt="image" src="https://github.com/user-attachments/assets/91d092e9-b157-4836-b8ec-c52b1aac202c" />
+<img width="1153" height="767" alt="image" src="https://github.com/user-attachments/assets/91d092e9-b157-4836-b8ec-c52b1aac202c" />
 - These features were chosen because they capture sunlight availability (GHI, DHI, DNI) and environmental factors (wind speed, temperature, pressure) that directly affect solar panel efficiency and energy output. Automatically identifies the target variable. It then splits the data into training (80%) and testing (20%) sets, trains a Random Forest Regressor, makes predictions, and evaluates performance using RMSE to measure how accurately the model predicts solar energy output.
 - Before evaluate with test data, we scales the input features using StandardScaler, and performs hyperparameter tuning for two models: Random Forest Regressor and XGBoost Regressor.
-- <img width="1156" height="179" alt="image" src="https://github.com/user-attachments/assets/17cafaf4-ed94-46dc-964f-16a312d246d8" />
+
+<img width="1365" height="734" alt="image" src="https://github.com/user-attachments/assets/c5286f65-93d1-4b91-bcf7-b5cce383451d" />
+<img width="1156" height="179" alt="image" src="https://github.com/user-attachments/assets/17cafaf4-ed94-46dc-964f-16a312d246d8" />
+- Random Forest achieved an RMSE of 0.2126, meaning predictions deviate from the actual values by ~0.21 units on average.
+- XGBoost achieved a similar RMSE of 0.2139, only slightly higher, indicating comparable performance.
+
+<img width="606" height="621" alt="image" src="https://github.com/user-attachments/assets/ce2d0926-2bee-4160-89ba-be27d2b5bd2b" />
+- The predictive model estimates % Baseline solar output with moderate accuracy (RMSE ≈ 0.21). While many predictions align closely with actual performance, certain periods show notable deviations, potentially linked to weather variability or sensor inaccuracies.
+
+# Recommendations
+- Inspect panels when actual output is below predictions.
+- Calibrate sensors regularly.
+- Plan maintenance around low-output forecasts.
 
 
-
-
-https://drive.google.com/drive/folders/1R_ViUPpIkR2KP3cZyxoJk3v38lexhwzk?usp=sharing
+Link to full demonstration: https://colab.research.google.com/drive/193WVKUfCFPhbdpEMPJD5E9ModjzhMN92?usp=sharing 
