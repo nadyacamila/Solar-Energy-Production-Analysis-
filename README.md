@@ -1,7 +1,7 @@
 # Solar-Energy-Production-Analysis-
 This project was created during Data Analysis Competition by ITS. The project was aim to find strategies to enhance the effectiveness of energy production from solar panels at a particular site, focusing on the fourth quarter of 2017. This evaluation will involve analyzing the area's various environmental and weather conditions to create forecasting models that estimate solar output and enhance energy efficiency.
 
-# Actions
+# Preparation
 <img width="2366" height="623" alt="image" src="https://github.com/user-attachments/assets/d91aa57f-ec6d-4a38-94a5-04daa555c92b" />
 
 - Environments data (Solar Irradiance) was merged into 1 file; every separate day, month, and time was merged into single Timestamp column
