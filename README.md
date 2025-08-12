@@ -2,14 +2,14 @@
 This project was created during Data Analysis Competition by ITS. The project was aim to find strategies to enhance the effectiveness of energy production from solar panels at a particular site, focusing on the fourth quarter of 2017. This evaluation will involve analyzing the area's various environmental and weather conditions to create forecasting models that estimate solar output and enhance energy efficiency.
 
 # Actions
--<img width="2366" height="623" alt="image" src="https://github.com/user-attachments/assets/d91aa57f-ec6d-4a38-94a5-04daa555c92b" />
+<img width="2366" height="623" alt="image" src="https://github.com/user-attachments/assets/d91aa57f-ec6d-4a38-94a5-04daa555c92b" />
 
 - Environments data (Solar Irradiance) was merged into 1 file; every separate day, month, and time was merged into single Timestamp column
 - Each of DHI, DNI, and GHI along with their respective clearsky counterparts have approximately 7.92% missing value. Handling less than 10% missing values was taken.
 - Weather and Train data has no missing values
-- <img width="1420" height="198" alt="image" src="https://github.com/user-attachments/assets/1692e5fe-0ad9-4456-9460-3f7a6c614fb0" />
+<img width="1420" height="198" alt="image" src="https://github.com/user-attachments/assets/1692e5fe-0ad9-4456-9460-3f7a6c614fb0" />
 - Environments and weather data merged according to the Timestamp
-- <img width="1202" height="763" alt="image" src="https://github.com/user-attachments/assets/a3bb784a-8965-47bc-b085-3e74e6b2a3fe" />
+<img width="1202" height="763" alt="image" src="https://github.com/user-attachments/assets/a3bb784a-8965-47bc-b085-3e74e6b2a3fe" />
 - Before merging the environmental conditions with train data, cheking and handling for un-matching Timestamp was conducted to ensure none duplicated data
 
 # Modeling
